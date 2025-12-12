@@ -1,0 +1,183 @@
+﻿@model AgriEnergy.Models.AuthModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+<style>
+    body {
+        margin: 0;
+        background-color: #f8f8f8;
+        font-family: 'Arial', sans-serif;
+        background-image: url('https://images.rawpixel.com/image_1300/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA2L3YxMTYtYWdyaWN1bHR1cmUtMDJlXzEuanBn.jpg');
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    .container {
+        max-width: 600px;
+        margin: 80px auto;
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        text-align: center;
+        color: #024d0a;
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        text-align: center;
+        color: #555;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+        color: #555;
+        margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="date"]:focus,
+    textarea:focus {
+        border-color: #ff8400;
+        outline: none;
+        box-shadow: 0 0 5px rgba(255, 132, 0, 0.5);
+    }
+
+    textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+
+    .btn-primary {
+        padding: 12px;
+        background-color: #ff8400;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #FFAC00;
+    }
+
+    a {
+        text-align: center;
+        display: block;
+        margin-top: 20px;
+        color: #007bff;
+        font-size: 16px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: #0056b3;
+        text-decoration: underline;
+    }
+
+    .text-danger {
+        font-size: 14px;
+    }
+</style>
+
+<div class="container" data-aos="fade-up" data-aos-duration="1000">
+    <h1 data-aos="fade-right" data-aos-duration="1200">Register</h1>
+    <h4 data-aos="fade-left" data-aos-duration="1200">Create a new account</h4>
+    <form asp-action="Registration" method="post" data-aos="zoom-in" data-aos-duration="1400">
+        <div asp-validation-summary="All" class="text-danger"></div>
+
+        <div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+            <label asp-for="Email" class="control-label">Email</label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <label asp-for="Password" class="control-label">Password</label>
+            <input asp-for="Password" class="form-control" type="password" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <label asp-for="ConfirmPassword" class="control-label">Confirm Password</label>
+            <input asp-for="ConfirmPassword" class="form-control" type="password" />
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </div>
+
+        <div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <label asp-for="Name" class="control-label">Name</label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <label asp-for="Dob" class="control-label">Date of Birth</label>
+            <input asp-for="Dob" class="form-control" type="date" />
+            <span asp-validation-for="Dob" class="text-danger"></span>
+        </div>
+
+        <div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+            <label asp-for="Bio" class="control-label">Bio</label>
+            <textarea asp-for="Bio" class="form-control"></textarea>
+            <span asp-validation-for="Bio" class="text-danger"></span>
+        </div>
+
+        <div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+            <input type="submit" value="Register" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1000,
+        once: true
+    });
+</script>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}
