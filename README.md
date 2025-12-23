@@ -11,12 +11,13 @@
 🧭 1. [**Introduction**](#-1-introduction)<br>
 🛠️ 2. [**Setting Up the Project Locally**](#️-2-setting-up-the-project-locally)<br>
 ✅ 3. [**Features and Functionality**](#-3-features-and-functionality)<br>
-🔐 4. [**Farmer & Employee Authentication & Navigation**](#-4-farmer--employee-authentication--navigation)<br>
-🏗️ 5. [**Architecture**](#️-5-architecture)<br>
-👥 6. [**Author and Contributions**](#-6-author-and-contributions)<br>
-⚖️ 7. [**MIT License**](#️-7-mit-license)<br>
-❓ 8. [**Frequently Asked Questions (FAQ)**](#-8-frequently-asked-questions-faq)<br>
-📚 9. [**References**](#-9-references)<br>
+🖼️ 4. [**Screenshots**](#️-4-screenshots)<br>
+🔐 5. [**Farmer & Employee Authentication & Navigation**](#-5-farmer--employee-authentication--navigation)<br>
+🏗️ 6. [**Architecture**](#️-6-architecture)<br>
+👥 7. [**Author and Contributions**](#-7-author-and-contributions)<br>
+⚖️ 8. [**MIT License**](#️-8-mit-license)<br>
+❓ 9. [**Frequently Asked Questions (FAQ)**](#-9-frequently-asked-questions-faq)<br>
+📚 10. [**References**](#-10-references)<br>
 
 ---
 
@@ -220,7 +221,18 @@ dotnet run
 
 ---
 
-## 🔐 4. Farmer & Employee Authentication & Navigation
+## 🖼️ 4. Screenshots
+
+|        Heading        |          Image / Screenshots           |
+| :-------------------: | :------------------------------------: |
+|     **Home Page**     |        ![Home](Assets/Home.jpg)        |
+|    **Marketplace**    | ![Marketplace](Assets/Marketplace.jpg) |
+|    **Categories**     |  ![Categories](Assets/Categories.jpg)  |
+| **AddFarmer (Admin)** |   ![AddFarmer](Assets/AddFarmer.jpg)   |
+
+---
+
+## 🔐 5. Farmer & Employee Authentication & Navigation
 
 ### 1. Registration
 
@@ -246,7 +258,7 @@ dotnet run
 
 ---
 
-## 🏗️ 5. Architecture
+## 🏗️ 6. Architecture
 
 ### Application Structure (ASP.NET Core MVC)
 
@@ -258,7 +270,7 @@ The application code adheres to the **MVC pattern**, which ensures a clear separ
 
 ---
 
-## 👥 6. Author and Contributions
+## 👥 7. Author and Contributions
 
 ### Primary Developer:
 
@@ -283,7 +295,7 @@ The application code adheres to the **MVC pattern**, which ensures a clear separ
 
 ---
 
-## ⚖️ 7. MIT License
+## ⚖️ 8. MIT License
 
 **Copyright © 2025 Ishkar Singh**<br>
 
@@ -296,7 +308,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ---
 
-## ❓ 8. Frequently Asked Questions (FAQ)
+## ❓ 9. Frequently Asked Questions (FAQ)
 
 ### 1. What software and knowledge do I need to run the Agri-Energy Connect project locally?
 
@@ -378,7 +390,7 @@ If the application fails to start, consider the following troubleshooting steps:
 
 ---
 
-## 📚 9. References
+## 📚 10. References
 
 - **Bro Code, n.d. C# Full Course for free.** [online] _[youtube.com](https://www.youtube.com/watch?v=wxznTygnRfQ)_ [Accessed 9 April 2025].
 - **Code A Future, n.d. How to Consume APIs in ASP.NET Core MVC (Step by Step Project).** [online] _[youtube.com](https://youtu.be/oM568qeQ0wE?si=BK9mLai2OkS3fJ5J)_ [Accessed 14 April 2025].
